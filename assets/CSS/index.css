@@ -1,0 +1,61 @@
+
+body{
+    padding : 0;
+    margin :0;
+    
+}
+
+.registration-container{
+    background-color: #E2EDFD;
+    padding: 2rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.registration-container .card{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 0px 5px 9px rgb(212 212 212 / 11%);
+   
+}
+
+.registration-left{
+    display: flex;
+    align-items: center;
+}
+
+.registration-left-img{
+    background:url('../Images/register.jpg');
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.user-left-img{
+   
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    margin: 0 auto;
+}
+
+.add-more,.remove{
+    font-size: 41px;
+    margin-top: 1.75rem;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: #91BFFF;
+    box-shadow: 1px 0px 5px 9px rgb(91 162 155 / 11%);
+}
+
+.user-img{
+    border-radius: 50%;
+}
