@@ -37,6 +37,7 @@ class Login extends ci_controller
 	//save user details in table
 	public function addUser()
 	{
+		
 		if (
 			isset($_POST['email']) && isset($_POST['ename']) && isset($_POST['password']) //check for all details are coming
 			&& !empty($_POST['email']) && !empty($_POST['ename']) && !empty($_POST['password'])
@@ -111,7 +112,7 @@ class Login extends ci_controller
 				if ($result[0]['status'] == 'A') {
 					// if ($result[0]['isAdmin'] && $result[0]['firstName'] != 'Super') {
 					$this->session->set_userdata("userInfo", $result[0]);
-					redirect(base_url("Main/vote"));
+					redirect(base_url("Main/profile"));
 					// } 
 				} else {
 					$this->session->set_flashdata("error", "Your account has been deactivated, Please contact to Admin.");
